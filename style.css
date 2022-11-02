@@ -130,9 +130,11 @@ button {
 @media (min-width: 600px){
 
     body, height{
-        height: 100%;
+        height: auto;
     }
-
+    body {
+        padding: 10%;
+    }
     main {
         width: 700px;
         height: fit-content;
