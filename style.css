@@ -1,0 +1,181 @@
+* {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+body, html {
+    width: 100%;
+    height: fit-content;
+    min-width: 350px;
+}
+
+body, main, .second, .pricing, .merged {
+    display: flex;
+}
+
+main, .second {
+    flex-direction: column;
+}
+
+body, main {
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    padding: 20% 10%;
+    background-color: hsl(204, 43%, 93%);
+    justify-content: center;
+    align-content: center;
+}
+
+.first, .second, .third {
+    padding: 7%;
+}
+
+.first h1, .first h2, .third h2, .third p, .second h2 {
+    margin: 0% 0% 7% 0%; 
+}
+
+.first p {
+    color: hsl(218, 22%, 67%);
+    font-size: 0.85rem;
+    line-height: 1.6rem;
+    margin: 0;
+    display: inline;
+}
+
+.first h1, .second h2, .third h2 {
+    font-size: 1.2rem;
+}
+
+.first h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.first h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 0.9rem;
+}
+
+button, main {
+    box-shadow: 0 3px 10px rgb(138, 127, 127);
+}
+
+main {
+    border-radius: 0.5rem;
+    max-width: 375px;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 5%;
+}
+
+.first {
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+
+}
+
+.second, .third {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.pricing{
+    flex-direction: row;
+    text-align: center;
+    margin: 0 0 2% 0;
+}
+
+.price {
+    margin-right: 1rem;
+    font-size: 2.4rem;
+}
+
+.monthly {
+    align-self: center;
+    font-weight: 400;
+    color:hsl(204, 43%, 93%);
+    opacity: 0.6;
+}
+
+.second h2, .third h2 {
+    font-weight: 400;
+}
+
+.third {
+    opacity: 0.8;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.second p {
+    margin: 0 0 10% 0;
+}
+
+.third p {
+    margin: 0 0 2% 0;
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+@media (min-width: 600px){
+
+    body, height{
+        height: 100%;
+    }
+
+    main {
+        width: 700px;
+        height: fit-content;
+        flex-direction: column;
+        max-width: none;
+    }
+
+    .merged {
+        flex-direction: row;
+    }
+
+    .second, .third {
+        flex-basis: 50%;
+    }
+
+    .first p {
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    .second {
+        border-radius:0 0 0 0.5rem;
+    }
+
+    .third {
+        border-radius: 0 0 0.5rem 0;
+    }
+
+    .second p {
+        font-size: 1rem;
+    }
+
+    .first h2 {
+        font-size: 1.4rem;
+        margin-bottom: 3%;
+    }
+
+    .first h1 {
+        font-size: 1.8rem;
+    }
+
+    .first h1, .first h2 {
+        margin-bottom: 3%;
+    }
+
+}
