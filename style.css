@@ -14,7 +14,7 @@ body, main, .second, .pricing, .merged {
     display: flex;
 }
 
-main, .second {
+main, .second, .merged {
     flex-direction: column;
 }
 
@@ -26,11 +26,12 @@ body, main {
 }
 
 body {
-    margin: 0%;
+    margin: 0% auto;
     padding: 20% 10%;
     background-color: hsl(204, 43%, 93%);
     justify-content: center;
     align-content: center;
+    max-width: 375px;
 }
 
 .first, .second, .third {
@@ -68,7 +69,6 @@ button, main {
 
 main {
     border-radius: 0.5rem;
-    max-width: 375px;
 }
 
 button {
@@ -127,19 +127,26 @@ button {
     opacity: 0.6;
 }
 
-@media (min-width: 600px){
-
-    body, height{
-        height: auto;
-    }
+@media (min-width: 576px) {
     body {
         padding: 10%;
+    }
+}
+
+@media (min-width: 875px){
+
+    body, html {
+        height: auto;
+    }
+
+    body {
+        padding: 5%;
+        max-width: none;
     }
     main {
         width: 700px;
         height: fit-content;
         flex-direction: column;
-        max-width: none;
     }
 
     .merged {
@@ -179,5 +186,4 @@ button {
     .first h1, .first h2 {
         margin-bottom: 3%;
     }
-    
 }
